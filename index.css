@@ -3,16 +3,18 @@
     font-family: Roboto;
     src: url(Roboto-Regular.ttf);
 }
+body{
+    padding: 0 100px;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
 }
-
 header{
     height: 80px;
-    margin: 20px;
+    margin: 20px 50px;
     border-radius: 4px;
     background: #7C6F64;
     display: flex;
@@ -47,27 +49,26 @@ header>h1{
 }
 
 main{
-    margin: 0 10%;
+    margin: 0 50px;
     background: #FBF1C7;
     border-radius: 4px;
     display: grid;
     grid-template-areas:"banner    banner"
                         "esquerda direita";
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 400px 1fr;
+    grid-template-rows: 700px 1fr;
 }
 #banner{
     grid-area: banner;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: rgba(0, 0, 0, .30);
-    margin: 20px;
-    border-radius: 4px;
+    margin: 30px 80px;
+    border-radius: 10px;
     background: #B16286;
-}
-#banner>h1{
-    font-size: 80px;
+    background-image: url(banner.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .1);
 }
 #esquerda{
     grid-area: esquerda;
@@ -84,12 +85,26 @@ section>h1{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content:space-around ;
+    margin: 20px;
+    padding: 30px;
 }
 .container>div{
     width: 160px;
     margin: 10px;
     height: 250px;
     border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+}
+.container>div>img{
+    height: calc(100% - 30px);
+    width: 100%;
+    object-fit: cover;
+}
+.preco{
+    background: #689D6A;
+    font-size: 20px;
+    padding-left: 5px;
 }
 #esquerda .container>div{
     background: #689D6A;
