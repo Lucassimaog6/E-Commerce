@@ -3,8 +3,21 @@
     font-family: Roboto;
     src: url(Roboto-Regular.ttf);
 }
+
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, .2);
+}
+::-webkit-scrollbar-thumb {
+    background: #7C6F64;
+}
+
 body{
-    padding: 0 100px;
+    background: #FBF1C7;
 }
 *{
     margin: 0;
@@ -14,24 +27,26 @@ body{
 }
 header{
     height: 80px;
-    margin: 20px 50px;
+    margin: 20px;
     border-radius: 4px;
     background: #7C6F64;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #FBF1C7;
 }
 header>img{
     margin: 0 40px;
 }
 #busca{
+    height: 45px;
     display: flex;
     justify-content: center;
     flex-grow: 5;
 }
 #busca>input{
     width: 60%;
-    height: 40px;
+    height: 100%;
     outline: none;
     border: none;
     padding: 8px;
@@ -39,7 +54,7 @@ header>img{
     border-radius: 4px 0 0 4px;
 }
 #busca>img{
-    height: 40px;
+    height: 100%;
     padding: 8px;
     border-radius: 0 4px 4px 0;
     background: #fff;
@@ -62,11 +77,11 @@ main{
     grid-area: banner;
     margin: 30px 80px;
     border-radius: 10px;
-    background: #B16286;
+    background: #FBF1C7;
     background-image: url(banner.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: auto;
     overflow: hidden;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .1);
 }
@@ -94,7 +109,7 @@ section>h1{
     height: 250px;
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .3);
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, .4);
 }
 .container>div>img{
     height: calc(100% - 30px);
@@ -102,13 +117,37 @@ section>h1{
     object-fit: cover;
 }
 .preco{
-    background: #689D6A;
+    color: #FBF1C7;
     font-size: 20px;
     padding-left: 5px;
+}
+
+#esquerda>h1{
+    color: #689D6A;
+}
+#direita>h1{
+    color: #CC241D;
+}
+#esquerda .preco{
+    background: #689D6A;
+}
+#direita .preco{
+    background: #CC241D;
 }
 #esquerda .container>div{
     background: #689D6A;
 }
 #direita .container>div{
     background: #CC241D;
+}
+
+footer{
+    background: #7C6F64;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+footer>a{
+    color: #FBF1C7;
+    margin-left: 60px;
 }
