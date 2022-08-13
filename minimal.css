@@ -1,0 +1,76 @@
+/* Fonte */
+@font-face {
+  font-family: Roboto;
+  src: url(Roboto-Regular.ttf);
+}
+
+
+/* Scrollbar customizada */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .2);
+}
+::-webkit-scrollbar-thumb {
+  background: #7C6F64;
+}
+body{
+  background: #FBF1C7;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: Roboto, sans-serif;
+}
+header{
+  height: 80px;
+  margin: 20px;
+  border-radius: 4px;
+  background: #7C6F64;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FBF1C7;
+}
+header>img{
+  margin: 0 40px;
+}
+#busca{
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  flex-grow: 5;
+}
+#busca>input{
+  width: 60%;
+  height: 100%;
+  outline: none;
+  border: none;
+  padding: 8px;
+  font-size: 1.1rem;
+  border-radius: 4px 0 0 4px;
+}
+#busca>img{
+  height: 100%;
+  padding: 8px;
+  border-radius: 0 4px 4px 0;
+  background: #fff;
+}
+header>h1{
+  flex-grow: 1;
+}
+
+footer{
+  background: #7C6F64;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+footer>a{
+  color: #FBF1C7;
+  margin-left: 60px;
+}
